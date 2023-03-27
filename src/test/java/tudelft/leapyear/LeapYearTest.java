@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 public class LeapYearTest {
     @Test
     public void leapYearsThatAreNonCenturialYears() {
+        //instentiate the class
         LeapYear ly = new LeapYear();
         boolean result = ly.isLeapYear(2016);
         Assertions.assertTrue(result);

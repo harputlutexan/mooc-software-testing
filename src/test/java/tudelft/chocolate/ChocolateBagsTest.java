@@ -9,6 +9,7 @@ public class ChocolateBagsTest {
     @CsvSource({ "1,1,5,0", "1,1,6,1", "1,1,7,-1", "1,1,8,-1" })
     public void totalIsTooBig(int small, int big, int total, int expectedResult) {
         ChocolateBags bags = new ChocolateBags();
+        //invoke calculate method
         int result = bags.calculate(small, big, total);
         Assertions.assertEquals(expectedResult, result);
     }
